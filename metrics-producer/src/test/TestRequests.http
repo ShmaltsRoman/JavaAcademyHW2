@@ -1,0 +1,27 @@
+POST http://localhost:8081/metrics
+Content-Type: application/json
+
+[
+  {
+    "name": "speed",
+    "value": 5
+  },
+  {
+    "name": "capacity",
+    "value": 10
+  },
+  {
+    "name": "memory",
+    "value": 100
+  }
+]
+
+###
+GET http://localhost:8082/metrics
+Content-Type: application/json
+
+###
+GET http://localhost:8082/metrics/2
+Content-Type: application/json
+
+###
